@@ -11,6 +11,7 @@ const forecast = require('./utils/forecast');
 
 const app = express();
 
+const port = process.env.PORT || 3000; //heroku
 //define paths for express
 const publicDirectoryPath = path.join(__dirname, '../public')
 const viewsPath = path.join(__dirname, '../templates/views');
@@ -115,8 +116,8 @@ app.get('*', (req, res) =>{
     });
 })
 
-//port 3000 for devicce
-app.listen(3000, () => {
-    console.log('abc');
+//port 3000 for device
+app.listen(port, () => {
+    console.log(port);
 });
 
