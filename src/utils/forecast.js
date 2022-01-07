@@ -11,7 +11,7 @@ const forecast= (lat, lon, callback) => {
         } else {
             callback(undefined, "It is currently "+ body.current.temperature + " degrees. The weather is " +
                      body.current.weather_descriptions[0] + '.' + 
-                    ' There is a ' + body.current.precip  +'% chance of rain. Humidity is ' + body.current.weather_descriptions.humidity + ', wind speed is ' + body.current.weather_descriptions.wind_speed + '.');
+                    ' There is a ' + body.current.precip  +'% chance of rain. Humidity is ' + body.current.humidity + ', wind speed is ' + body.current.wind_speed + '.');
         }
     })
 }
