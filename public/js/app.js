@@ -1,4 +1,4 @@
-console.log('js loaded');
+
 
 console.log('Client side javascript file is loaded!')
 
